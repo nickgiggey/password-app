@@ -1,6 +1,3 @@
-// --1) ctrl+H REPLACE [example] w/ newName (lowercase) DELETE ME WHEN DONE---------
-// --) IF NEEDED ctrl+H REPLACE [xample] w/ newName (lowercase) DELETE ME WHEN DONE ---------
-
 //= ===============
 // Basic Config
 //= ===============
@@ -14,7 +11,6 @@ const mongoose = require('./db/connection');
 
 const cors = require('cors');
 // ---------  app port ----------
-
 
 //= ===============
 // Middleware
@@ -34,17 +30,9 @@ app.get('/examples', (req, res) => {
 	res.redirect('/examples');
 });
 
-// ----- IF NOT NEEDED DELETE BLOCK  -----
-// app.get("/xamples", (req, res) => {
-//   res.redirect("/xamples");
-// });
-//----------------------------------------//
-
 //= ===============
 // START SERVER
 //= ===============
-
-
 
 /* START CONTROLLERS HERE -- */
 
@@ -53,16 +41,8 @@ app.get('/examples', (req, res) => {
 const roomController = require('./controllers/roomController');
 app.use('/api/rooms', roomController);
 
-const guestController = require('./controllers/guestController');
-app.use('/api/guests', guestController);
-
-// const exampleController = require('./controllers/exampleController');
-// app.use('/examples', exampleController);
-
-/// ----- IF NOT NEEDED DELETE BLOCK  -----//
-// const xampleController = require('./controllers/xampleController');
-// app.use('/xamples', xampleController);
-//----------------------------------------//
+const initiateController = require('./controllers/initiateController');
+app.use('/api/initiate', initiateController);
 
 /* END CONTROLLERS HERE -- */
 // ------  app.use err ------
