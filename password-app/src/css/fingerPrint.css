@@ -2,8 +2,8 @@
 
 .buttonTwo {
   width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  height: 450px;
+  border: none;
   background: #0c0c0c;
   user-select: none;
 }
@@ -29,4 +29,61 @@
 	animation: mymove 1s ease infinite;
 	animation-iteration-count: 1;	
   user-select: none;
+}
+
+.Form-Page-Container {
+    display: grid;
+    place-items: center center;
+    background: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Cinzel', serif;
+}
+
+.Form-container {
+    display: flex;
+    max-width: 500px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.form-label {
+    font-size: 1.4em;
+}
+
+.form-input {
+    height: 3em;
+    font-size: 1.1em;
+    border-radius: 0.5em;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+.form-input:active, .form-input:hover {
+    box-shadow: 0 2px 5px 0;
+}
+
+.form-submit:hover {
+    box-shadow: 0 4px 10px 0 grey;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0.25)), rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+.form-submit {
+    padding: 0.5em;
+    font-size: 1.3em;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(0, 0, 0, 0.25)), rgba(0, 0, 0, 0.06);
+    border-radius: 0.5em;
+    color: black;
+    font-family: 'Cinzel', serif;
+    box-shadow: 0 2px 5px 0 grey;
+}
+
+@media screen and (max-width: 800px) {
+    .Form-container {
+        margin-top: 90px;
+        width: 90%
+    }
 }

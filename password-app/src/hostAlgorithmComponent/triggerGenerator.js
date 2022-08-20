@@ -1,39 +1,22 @@
-import React, { Component } from 'react';
 import '../css/hostAlgorithm.css';
+import { useState } from 'react';
 
-// -------------------------------------Random Number Generator-------------------------------------- //
-class TriggerGenerator extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { shared_var: "init" };
-    }
-    generateRandomNumber = this.generatedRandomNumber.bind(this);
-    componentDidMount() {
-        this.generateRandomNumber();
-    }
-    newRandomNumber(min, max) {
+function TriggerGenerator() {
+    const [num, setNum] = useState(0);
+
+    function randomNumberInRange(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    generatedRandomNumber() {
-        setInterval(() => {
-            const rando = this.newRandomNumber(1, 100);
-            console.log(rando);
-            return rando;
-        }, 5000);
+
+    const handleClick = () => {
+        setNum(randomNumberInRange(1, 100));
     };
-    render() {
-        return (
-            <React.Fragment>
-                <></>
-            </React.Fragment>
-        );
-    }
+    return (
+        <div>
+            <h2>number is: {num}</h2>
+            <button onClick={handleClick}>Generate random number</button>
+        </div>
+    );
 }
-class RandoAlgorithm extends Component {
-    render() {
-        return <React.Fragment>
-            <TriggerGenerator />
-        </React.Fragment>;
-    }
-}
-export default RandoAlgorithm;
+
+export default TriggerGenerator;
