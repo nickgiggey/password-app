@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200');
+@import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
+
+.host-algorithm {
+    text-align: center;
+}
+
+p {
+    color: rgb(204, 77, 3);
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    transform: rotateY(180deg);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid;
+    border-color: #FFBE0B;
+}
+
+.generate-frequency {
+    background-color: #030301;
+    color: green;
+    font-family: 'Dosis', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    height: 75px;
+    width: 300px;
+    transform: rotateY(180deg);
+    text-align: center;
+    border: 1px solid;
+    border-color: #FFBE0B;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.generate-frequency:hover {
+    background-color: #030301;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: yellow;
+    transition: border-color 1s ease-out;
+}

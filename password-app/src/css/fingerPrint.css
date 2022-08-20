@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.buttonTwo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #0c0c0c;
+  user-select: none;
+}
+
+.finger-print:after, .fas {
+  transition-property: all;
+  transition-duration: 1s;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.i1:before {
+  transform: translate(-50%, -100%);
+  font-size: 75px;
+  color: #00ffe7;
+  transition: 0.4s all;
+  user-select:none;
+  width: 100px;
+  height: 100px;
+}
+
+.btn:active {
+	animation: mymove 1s ease infinite;
+	animation-iteration-count: 1;	
+  user-select: none;
+}

@@ -1,0 +1,6 @@
+.ipgeo-main-container {
+    height: auto;
+    width: auto;
+    transition: all .5s ease;
+    border-color: #FFBE0B;
+}
