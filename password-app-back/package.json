@@ -1,7 +1,6 @@
 {
   "name": "password-app-back",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CPlusPLusPlusPluss/Back-End-Project-3.git"
+    "url": "git+https://github.com/nickgiggey/password-app-back.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CPlusPLusPlusPluss/Back-End-Project-3/issues"
+    "url": "https://github.com/nickgiggey/password-app-back/issues"
   },
-  "homepage": "https://github.com/CPlusPLusPlusPluss/Back-End-Project-3#readme",
+  "homepage": "https://github.com/nickgiggey/password-app-back#readme",
   "dependencies": {
     "axios": "^0.27.2",
     "chai": "^4.3.6",
@@ -27,5 +26,10 @@
     "mocha": "^10.0.0",
     "mongoose": "^6.4.3",
     "nodemon": "^2.0.19"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "description": ""
 }
